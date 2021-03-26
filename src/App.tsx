@@ -10,12 +10,16 @@ import { CartProvider } from './hooks/useCart';
 const App = (): JSX.Element => {
   return (
     <BrowserRouter>
+
       <CartProvider>
+
         <GlobalStyles />
         <Header />
         <Routes />
         <ToastContainer autoClose={3000} />
+
       </CartProvider>
+      
     </BrowserRouter>
   );
 };
